@@ -38,9 +38,9 @@
 
 /* Begin PBXFileReference section */
 		05672D5855D7986D28AE9BC8 /* Pods_PPAPIsKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PPAPIsKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		156FCB09BFD44AAE96644A24 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		156FCB09BFD44AAE96644A24 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		24E989A0197E3F229184C6F4 /* Pods-PPAPIsKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PPAPIsKit_Example.release.xcconfig"; path = "Target Support Files/Pods-PPAPIsKit_Example/Pods-PPAPIsKit_Example.release.xcconfig"; sourceTree = "<group>"; };
-		2D8D7B5374281C996B665845 /* PPAPIsKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = PPAPIsKit.podspec; path = ../PPAPIsKit.podspec; sourceTree = "<group>"; };
+		2D8D7B5374281C996B665845 /* PPAPIsKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = PPAPIsKit.podspec; path = ../PPAPIsKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		6003F58A195388D20070C39A /* PPAPIsKit_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PPAPIsKit_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -66,7 +66,7 @@
 		A53B3B9296D7F7B2A68F39E2 /* Pods-PPAPIsKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PPAPIsKit_Tests.debug.xcconfig"; path = "Target Support Files/Pods-PPAPIsKit_Tests/Pods-PPAPIsKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		A92DF9A68EA6E11CD78D75F8 /* Pods-PPAPIsKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PPAPIsKit_Example.debug.xcconfig"; path = "Target Support Files/Pods-PPAPIsKit_Example/Pods-PPAPIsKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		B5C2158ADA2CB48F5805DF77 /* Pods-PPAPIsKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PPAPIsKit_Tests.release.xcconfig"; path = "Target Support Files/Pods-PPAPIsKit_Tests/Pods-PPAPIsKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		C0011D733B7147159C2F3CBC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		C0011D733B7147159C2F3CBC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,7 +193,6 @@
 				A53B3B9296D7F7B2A68F39E2 /* Pods-PPAPIsKit_Tests.debug.xcconfig */,
 				B5C2158ADA2CB48F5805DF77 /* Pods-PPAPIsKit_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +257,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -346,10 +346,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-PPAPIsKit_Example/Pods-PPAPIsKit_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/PPAPIsKit/PPAPIsKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PPAPIsKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
